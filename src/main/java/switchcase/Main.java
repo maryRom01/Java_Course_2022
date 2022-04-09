@@ -10,7 +10,8 @@ public class Main {
 //            case 1 -> "Summer";
 //            case 2 -> "Fall";
 //            case 3 -> "Winter";
-//            default -> "Invalid season";
+//            default -> System.out.println("This season is invalid");
+//                         yield "Invalid season";
 //        };
 //        System.out.println(season);
     }
