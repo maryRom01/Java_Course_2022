@@ -114,6 +114,16 @@ public class Main {
         myList6.stream()
                 .sorted(Collections.reverseOrder())
                 .forEach(System.out::println);
+        breakingLine();
+
+        List<Integer> myList7 = Arrays.asList(-1, 0, 2, 0, 3, 6, -5, 0, 128);
+        Comparator<Integer> zeroEndSorted = (a, b) -> a - b == a ? -1 : 0;
+        List<Integer> sorted = myList7.stream()
+                .sorted()
+                .sorted(zeroEndSorted)
+                .collect(Collectors.toList());
+        System.out.println(sorted);
+        breakingLine();
     }
 
     private static void breakingLine() {
