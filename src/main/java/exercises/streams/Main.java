@@ -126,6 +126,7 @@ public class Main {
         breakingLine();
     }
 
+
     private static void breakingLine() {
         System.out.println("---------------------");
     }
