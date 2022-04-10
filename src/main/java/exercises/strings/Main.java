@@ -1,5 +1,7 @@
 package exercises.strings;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         String text = "Text messaging, or texting, is the act of " +
@@ -17,5 +19,7 @@ public class Main {
 
         String[] words = text.split(" |-|/");
         System.out.println("The text has " + words.length + " words");
+
+        System.out.println("The text has " + text.length() + " characters");
     }
 }
