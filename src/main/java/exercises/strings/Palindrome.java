@@ -3,9 +3,9 @@ package exercises.strings;
 public class Palindrome {
 
     public static void main(String[] args) {
-        String text1 = "carerac";
+        String text1 = "Carerac";
         String text2 = "palindrome";
-        String text3 = "citstic";
+        String text3 = "citstiC";
         String text4 = "20/02/20/02";
 
         System.out.println(isPalindrome(text1));
@@ -24,11 +24,11 @@ public class Palindrome {
             splitter = (text.length() - 1) / 2;
         }
 
-        part1 = text.substring(0, splitter);
+        part1 = text.substring(0, splitter).toLowerCase();
         if (text.length() % 2 == 0) {
-            part2 = text.substring(splitter);
+            part2 = text.substring(splitter).toLowerCase();
         } else {
-            part2 = text.substring(splitter + 1);
+            part2 = text.substring(splitter + 1).toLowerCase();
         }
 
         if (part1.equals(new StringBuilder(part2).reverse().toString())) {
